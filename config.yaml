@@ -7,7 +7,7 @@ settings:
 
   allmonitorsOperational: '所有系统和服务都正常运行'
   notAllmonitorsOperational: '存在非正常运行的系统和服务'
-  monitorLabelOperational: '运行中'
+  monitorLabelOperational: '运行'
   monitorLabelNotOperational: '离线'
   monitorLabelNoData: '无数据'
   dayInHistogramNoData: '无数据'
