@@ -72,6 +72,28 @@ export default function Index({ config, kvMonitors, kvMonitorsLastUpdate }) {
           <div className="flex flex-row items-center">
             <img className="h-8 w-auto" src={config.settings.logo} />
             <h1 className="ml-4 text-3xl">{config.settings.title}</h1>
+            <script src="https://res.zvo.cn/translate/translate.js"></script>
+            <script>
+        			try{
+                translate.listener.start();
+                translate.language.setLocal('chinese_simplified');
+                translate.setAutoDiscriminateLocalLanguage();
+                translate.language.setUrlParamControl();
+                translate.ignore.class.push('notTranslate');
+              }
+              catch(e){console.log(e);}
+              translate.setUseVersion2();
+              translate.execute();
+        </script>
+            <style>
+              .translateSelectLanguage{z-index:10;width:100%;height:100%;opacity:0;cursor:pointer;position:absolute;left:0}
+            </style>
+            <button
+              id="translate"
+              className={`${buttonColor} rounded-full h-7 w-7 mr-4 focus:outline-none focus:ring-2 focus:ring-opacity-50`}
+            >
+              <p>🌐</p>
+            </button>
           </div>
           <div className="flex flex-row items-center">
             {typeof window !== 'undefined' && <ThemeSwitcher />}
