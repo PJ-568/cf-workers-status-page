@@ -40,14 +40,6 @@ monitors:
     expectStatus: 200
     linkable: true
 
-  - id: chat-pj568-eu-org
-    name: Chat.PJ568.eu.org
-    description: 'FakeAI.'
-    url: 'https://chat.pj568.eu.org/'
-    method: GET
-    expectStatus: 200
-    linkable: true
-
   - id: hamud-lang
     name: حامود 哈姆语官网 Hamud language (official site)
     description: '旨在为哈姆语言提供标准范本。为学习哈姆语的人提供参考资料。'
