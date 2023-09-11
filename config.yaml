@@ -2,7 +2,7 @@ settings:
   title: '状态监控页'
   url: 'https://status.pj568.eu.org' # used for Slack messages
   logo: https://tools.pj568.eu.org/img/icon.svg # image in ./public/ folder
-  daysInHistogram: 120 # number of days you want to display in histogram
+  daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
   allmonitorsOperational: '所有系统和服务都正常运行'
