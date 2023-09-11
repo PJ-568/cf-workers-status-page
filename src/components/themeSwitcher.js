@@ -48,28 +48,6 @@ export default function ThemeSwitcher() {
   const buttonColor = darkmode ? 'bg-gray-700 focus:ring-gray-700' : 'bg-gray-200 focus:ring-gray-200'
 
   return (
-    <script src="https://res.zvo.cn/translate/translate.js"></script>
-    <script>
-			try{
-        translate.listener.start();
-        translate.language.setLocal('chinese_simplified');
-        translate.setAutoDiscriminateLocalLanguage();
-        translate.language.setUrlParamControl();
-        translate.ignore.class.push('notTranslate');
-      }
-      catch(e){console.log(e);}
-      translate.setUseVersion2();
-      translate.execute();
-		</script>
-    <style>
-      .translateSelectLanguage{z-index:10;width:100%;height:100%;opacity:0;cursor:pointer;position:absolute;left:0}
-    </style>
-    <button
-      id="translate"
-      className={`${buttonColor} rounded-full h-7 w-7 mr-4 focus:outline-none focus:ring-2 focus:ring-opacity-50`}
-    >
-      <p>🌐</p>
-    </button>
     <button
       className={`${buttonColor} rounded-full h-7 w-7 mr-4 focus:outline-none focus:ring-2 focus:ring-opacity-50`}
       onClick={changeTheme}
