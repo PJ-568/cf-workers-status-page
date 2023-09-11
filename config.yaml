@@ -1,39 +1,73 @@
 settings:
-  title: 'Status Page'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
-  logo: logo-192x192.png # image in ./public/ folder
-  daysInHistogram: 90 # number of days you want to display in histogram
+  title: '状态监控页'
+  url: 'https://status.pj568.eu.org' # used for Slack messages
+  logo: https://tools.pj568.eu.org/img/icon.svg # image in ./public/ folder
+  daysInHistogram: 120 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
-  allmonitorsOperational: 'All Systems Operational'
-  notAllmonitorsOperational: 'Not All Systems Operational'
-  monitorLabelOperational: 'Operational'
-  monitorLabelNotOperational: 'Not Operational'
-  monitorLabelNoData: 'No data'
-  dayInHistogramNoData: 'No data'
-  dayInHistogramOperational: 'All good'
-  dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
+  allmonitorsOperational: '所有系统和服务都正常运行'
+  notAllmonitorsOperational: '存在非正常运行的系统和服务'
+  monitorLabelOperational: '运行中'
+  monitorLabelNotOperational: '离线'
+  monitorLabelNoData: '无数据'
+  dayInHistogramNoData: '无数据'
+  dayInHistogramOperational: '好，很好'
+  dayInHistogramNotOperational: '起事件' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
+  - id: 568-blog # unique identifier
+    name: PJ568的博客
+    description: 'PJ568 的文章和项目介绍托管在这个博客中。' # default=empty
+    url: 'https://pj568.eu.org/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
-
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
-    method: GET
-    expectStatus: 200
     linkable: true # allows the title to be a link, default=true
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
+  - id: 568-tools
+    name: 568Tools 在线工具箱
+    description: '致力于创造并维护无需注册、下载和上传即可免费使用的静态在线工具环境。'
+    url: 'https://tools.pj568.eu.org/'
     method: GET
     expectStatus: 200
+    linkable: true
+
+  - id: spinning-bird
+    name: 转转雀 - Github 下载加速
+    description: 'Github 加速。'
+    url: 'https://proxy.pj568.eu.org/'
+    method: GET
+    expectStatus: 200
+    linkable: true
+
+  - id: chat-pj568-eu-org
+    name: Chat.PJ568.eu.org
+    description: 'FakeAI.'
+    url: 'https://chat.pj568.eu.org/'
+    method: GET
+    expectStatus: 200
+    linkable: true
+
+  - id: hamud-lang
+    name: حامود 哈姆语官网 Hamud language (official site)
+    description: '旨在为哈姆语言提供标准范本。为学习哈姆语的人提供参考资料。'
+    url: 'https://hamud.pj568.eu.org/'
+    method: GET
+    expectStatus: 200
+    linkable: true
+
+  - id: nuc
+    name: 核污染水的真相
+    description: '这是一个致力于反对核污染水排海并提供可能的解决方案的平台。'
+    url: 'https://nuc.pj568.eu.org/'
+    method: GET
+    expectStatus: 200
+    linkable: true
+
+  - id: lll
+    name: 杰仁信息技术小组LLL
+    description: 'LLL 介绍。'
+    url: 'https://lll.pj568.eu.org/'
+    method: GET
+    expectStatus: 200
+    linkable: true
