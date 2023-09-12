@@ -6,7 +6,7 @@ settings:
   collectResponseTimes: true # collects avg response times from CRON locations
 
   allmonitorsOperational: '所有系统和服务都正常运行'
-  notAllmonitorsOperational: '存在非正常运行的系统和服务'
+  notAllmonitorsOperational: '存在非正常运行的系统或服务'
   monitorLabelOperational: '运行'
   monitorLabelNotOperational: '离线'
   monitorLabelNoData: '无数据'
