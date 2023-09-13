@@ -7,7 +7,7 @@ settings:
 
   allmonitorsOperational: '所有系统和服务都正常运行'
   notAllmonitorsOperational: '存在非正常运行的系统或服务'
-  monitorLabelOperational: '运行'
+  monitorLabelOperational: '在线'
   monitorLabelNotOperational: '离线'
   monitorLabelNoData: '无数据'
   dayInHistogramNoData: '无数据'
@@ -32,18 +32,26 @@ monitors:
     expectStatus: 200
     linkable: true
 
-  - id: spinning-bird
-    name: 转转雀 - Github 下载加速
-    description: 'Github 加速。'
-    url: 'https://proxy.pj568.eu.org/'
+  - id: server
+    name: 废品拼组装的服务器
+    description: '破烂服务器'
+    url: 'https://server.pj568.eu.org/'
     method: GET
     expectStatus: 200
-    linkable: true
+    linkable: false
 
   - id: hamud-lang
     name: حامود 哈姆语官网 Hamud language (official site)
     description: '旨在为哈姆语言提供标准范本。为学习哈姆语的人提供参考资料。'
     url: 'https://hamud.pj568.eu.org/'
+    method: GET
+    expectStatus: 200
+    linkable: true
+
+  - id: spinning-bird
+    name: 转转雀 - Github 下载加速
+    description: 'Github 加速。'
+    url: 'https://proxy.pj568.eu.org/'
     method: GET
     expectStatus: 200
     linkable: true
