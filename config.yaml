@@ -48,6 +48,14 @@ monitors:
     expectStatus: 200
     linkable: true
 
+  - id: calc
+    name: 568_Calc
+    description: '568_Calc 是一个简单的多平台支持的计算器。'
+    url: 'https://calc.pj568.eu.org/'
+    method: GET
+    expectStatus: 200
+    linkable: true
+
   - id: spinning-bird
     name: 转转雀 - Github 下载加速
     description: 'Github 加速。'
