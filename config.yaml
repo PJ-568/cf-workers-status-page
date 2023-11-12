@@ -41,7 +41,7 @@ monitors:
     linkable: false
 
   - id: hamud-lang
-    name: حامود 哈姆语官网 Hamud language (official site)
+    name: حامود 哈姆语官网
     description: '旨在为哈姆语言提供标准范本。为学习哈姆语的人提供参考资料。'
     url: 'https://hamud.pj568.eu.org/'
     method: GET
@@ -57,7 +57,7 @@ monitors:
     linkable: true
 
   - id: spinning-bird
-    name: 转转雀 - Github 下载加速
+    name: 转转雀
     description: 'Github 加速。'
     url: 'https://proxy.pj568.eu.org/'
     method: GET
