@@ -48,6 +48,14 @@ monitors:
     expectStatus: 200
     linkable: true
 
+  - id: mhdh
+    name: MHDH 维基
+    description: '一个政治模拟世界线维基。'
+    url: 'https://mhdh.pj568.eu.org/'
+    method: GET
+    expectStatus: 200
+    linkable: true
+
   - id: calc
     name: 568_Calc
     description: '568_Calc 是一个简单的多平台支持的计算器。'
