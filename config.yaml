@@ -40,6 +40,14 @@ monitors:
     expectStatus: 200
     linkable: false
 
+  - id: qmole-source-site
+    name: QMole Software Repository | QMole 软件源
+    description: 'QMole Cydia 软件源以 chriskmanx/qmole-packages 为蓝本构建，旨在替代过时的 http://qmole.uk/linux 。'
+    url: 'https://qmole.pj568.eu.org/'
+    method: GET
+    expectStatus: 200
+    linkable: true
+
   - id: hamud-lang
     name: حامود 哈姆语官网
     description: '旨在为哈姆语言提供标准范本。为学习哈姆语的人提供参考资料。'
