@@ -32,6 +32,14 @@ monitors:
     expectStatus: 200
     linkable: true
 
+  - id: dsh
+    name: PJ568 服务器
+    description: '服务器'
+    url: 'https://dsh.pj568.eu.org/'
+    method: GET
+    expectStatus: 200
+    linkable: true
+
   - id: server
     name: 废品拼装的服务器
     description: '破烂服务器'
