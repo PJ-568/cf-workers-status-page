@@ -1,7 +1,7 @@
 settings:
   title: '状态监控页'
-  url: 'https://status.pj568.eu.org' # used for Slack messages
-  logo: https://tools.pj568.eu.org/img/icon.svg # image in ./public/ folder
+  url: 'https://status.pj568.sbs' # used for Slack messages
+  logo: https://tools.pj568.sbs/img/icon.svg # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
@@ -18,7 +18,7 @@ monitors:
   - id: 568-blog # unique identifier
     name: PJ568的博客
     description: 'PJ568 的文章和项目介绍托管在这个博客中。' # default=empty
-    url: 'https://pj568.eu.org/' # URL to fetch
+    url: 'https://blog.pj568.sbs/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
@@ -27,7 +27,7 @@ monitors:
   - id: 568-tools
     name: 568Tools 在线工具箱
     description: '致力于创造并维护无需注册、下载和上传即可免费使用的静态在线工具环境。'
-    url: 'https://tools.pj568.eu.org/'
+    url: 'https://tools.pj568.sbs/'
     method: GET
     expectStatus: 200
     linkable: true
@@ -35,7 +35,7 @@ monitors:
   - id: dsh
     name: PJ568 服务器
     description: '服务器'
-    url: 'https://dsh.pj568.eu.org/'
+    url: 'https://dsh.pj568.sbs/'
     method: GET
     expectStatus: 200
     linkable: true
@@ -43,7 +43,7 @@ monitors:
   - id: server
     name: 废品拼装的服务器
     description: '破烂服务器'
-    url: 'https://rwkv.pj568.eu.org/'
+    url: 'https://rwkv.pj568.sbs/'
     method: GET
     expectStatus: 200
     linkable: false
@@ -51,7 +51,7 @@ monitors:
   - id: qmole-source-site
     name: QMole Software Repository | QMole 软件源
     description: 'QMole Cydia 软件源以 chriskmanx/qmole-packages 为蓝本构建，旨在替代过时的 http://qmole.uk/linux 。'
-    url: 'https://qmole.pj568.eu.org/'
+    url: 'https://qmole.pj568.sbs/'
     method: GET
     expectStatus: 200
     linkable: true
@@ -59,7 +59,7 @@ monitors:
   - id: hamud-lang
     name: حامود 哈姆语官网
     description: '旨在为哈姆语言提供标准范本。为学习哈姆语的人提供参考资料。'
-    url: 'https://hamud.pj568.eu.org/'
+    url: 'https://hamud.pj568.sbs/'
     method: GET
     expectStatus: 200
     linkable: true
@@ -75,7 +75,7 @@ monitors:
   - id: calc
     name: 568_Calc
     description: '568_Calc 是一个简单的多平台支持的计算器。'
-    url: 'https://calc.pj568.eu.org/'
+    url: 'https://calc.pj568.sbs/'
     method: GET
     expectStatus: 200
     linkable: true
@@ -83,7 +83,7 @@ monitors:
   - id: spinning-bird
     name: 转转雀
     description: 'Github 加速。'
-    url: 'https://proxy.pj568.eu.org/'
+    url: 'https://xn--yfr044l.pj568.sbs/'
     method: GET
     expectStatus: 200
     linkable: true
@@ -99,7 +99,7 @@ monitors:
   - id: lll
     name: 杰仁信息技术小组LLL
     description: 'LLL 介绍。'
-    url: 'https://lll.pj568.eu.org/'
+    url: 'https://lll.pj568.sbs/'
     method: GET
     expectStatus: 200
     linkable: true
