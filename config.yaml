@@ -40,13 +40,13 @@ monitors:
     expectStatus: 200
     linkable: true
 
-  - id: server
-    name: 废品拼装的服务器
-    description: '破烂服务器'
-    url: 'https://rwkv.pj568.sbs/'
-    method: GET
-    expectStatus: 200
-    linkable: false
+  # - id: server
+  #   name: 废品拼装的服务器
+  #   description: '破烂服务器'
+  #   url: 'https://rwkv.pj568.sbs/'
+  #   method: GET
+  #   expectStatus: 200
+  #   linkable: false
 
   - id: qmole-source-site
     name: QMole Software Repository | QMole 软件源
@@ -88,13 +88,13 @@ monitors:
     expectStatus: 200
     linkable: true
 
-  - id: nuc
-    name: 核污染水的真相
-    description: '这是一个致力于反对核污染水排海并提供可能的解决方案的平台。'
-    url: 'https://nuc.pj568.eu.org/'
-    method: GET
-    expectStatus: 200
-    linkable: true
+  # - id: nuc
+  #   name: 核污染水的真相
+  #   description: '这是一个致力于反对核污染水排海并提供可能的解决方案的平台。'
+  #   url: 'https://nuc.pj568.eu.org/'
+  #   method: GET
+  #   expectStatus: 200
+  #   linkable: true
 
   - id: lll
     name: 杰仁信息技术小组LLL
