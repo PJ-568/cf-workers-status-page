@@ -16,7 +16,7 @@ settings:
 
 monitors:
   - id: 568-blog # unique identifier
-    name: PJ568的博客
+    name: PJ568 的博客
     description: 'PJ568 的文章和项目介绍托管在这个博客中。' # default=empty
     url: 'https://blog.pj568.sbs/' # URL to fetch
     method: GET # default=GET
@@ -40,13 +40,13 @@ monitors:
     expectStatus: 200
     linkable: true
 
-  # - id: server
-  #   name: 废品拼装的服务器
-  #   description: '破烂服务器'
-  #   url: 'https://rwkv.pj568.sbs/'
-  #   method: GET
-  #   expectStatus: 200
-  #   linkable: false
+  - id: server
+    name: 废品拼装的 k9 服务器
+    description: 'k9 服务器'
+    url: 'https://ssh-k9.pj568.sbs/'
+    method: GET
+    expectStatus: 200
+    linkable: false
 
   - id: qmole-source-site
     name: QMole Software Repository | QMole 软件源
